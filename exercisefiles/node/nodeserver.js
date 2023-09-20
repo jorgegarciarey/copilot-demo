@@ -91,7 +91,6 @@ function getMoviesByDirector(director) {
   });
 }
 
-
 const server = http.createServer((req, res) => {
   // Create a heatlh check method in a endpoint
   if (req.url === '/health') {
@@ -198,5 +197,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(3000, () => {
-  console.log('server is listening on port 3000');
+  console.log('Node server is listening on port 3000');
 });

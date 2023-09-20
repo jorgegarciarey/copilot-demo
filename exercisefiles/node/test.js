@@ -13,7 +13,7 @@ const server = require('./NodeServer');
 describe('Node Server', () => {
     it('Should return "key not passed" if key is not passed', (done) => {
         http
-        .get('http://localhost:3000/get' , (res) => {
+        .get(localhost + '/get' , (res) => {
             let data = '';
             res.on('data', (chunk) => {
                 data += chunk;
@@ -28,7 +28,7 @@ describe('Node Server', () => {
     // Add test to check get when key is equal to Jorge
     it('Should return "Hello Jorge" if key is equal to Jorge', (done) => {
         http
-        .get('http://localhost:3000/get?key=Jorge' , (res) => {
+        .get(localhost + '/get?key=Jorge' , (res) => {
             let data = '';
             res.on('data', (chunk) => {
                 data += chunk;
