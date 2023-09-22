@@ -50,13 +50,13 @@ Receive by querystring a parameter called name and return a hello name message.
 
 Receive by query string 2 parameters date1 and date 2 and calculate the days that are between those two dates.
 
-- ### validatePhoneNumber
+- ### /validatePhoneNumber
 
 Receive by querystring a parameter called phoneNumber. Validate phoneNumber with Spanish format, for example +34666777888
 if phoneNumber is valid return "valid"
 if phoneNumber is not valid return "invalid"
 
-- ### validateSpanishDNI
+- ### /validateSpanishDNI
 
 Receive by querystring a parameter called dni and calculate DNI letter
 
