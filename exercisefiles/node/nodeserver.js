@@ -193,6 +193,20 @@ const server = http.createServer((req, res) => {
     }
   }
 
+  // Create an endpoint /isNumber that returns true if the value passed is a number and false if it is not
+  else if (req.url.startsWith('/isNumber')) {
+    const queryObject = url.parse(req.url, true).query;
+    if (queryObject.value) {
+      const value = queryObject.value;
+      const isNumber = !isNaN(value);
+
+      res.end(isNumber.toString());
+    } else {
+      res.end('Value not passed');
+    }
+  }
+
+
 
 });
 
