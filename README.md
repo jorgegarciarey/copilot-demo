@@ -1,4 +1,4 @@
-# Activate GitHub Copilot using Nodejs and .NET Core
+#aa Activate GitHub Copilot using Nodejs and .NET Core
 
 Demo project for running labs to evaluate Copilot viability
 
